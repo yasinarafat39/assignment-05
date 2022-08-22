@@ -1,0 +1,21 @@
+
+/* 
+#main-head{
+    background-image: url(images/Group\ 12.png);
+    background-repeat: no-repeat;
+} */
+
+#goal{
+    background-image: url(images/Rectangle\ 57.png);
+}
+
+
+/* font family */
+
+.manrope{
+    font-family: 'Manrope', sans-serif;
+}
+.berkshire-swash{
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 200;
+}
