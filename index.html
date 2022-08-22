@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- google font  -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Itim&family=Manrope&display=swap');
     </style>
 </head>
 
@@ -50,57 +50,57 @@
 
             <div class="players grid grid-cols-3 gap-4">
                 <!-- player-1 -->
-                <div class="player border border-gray-600 bg-black">
+                <div class="border border-gray-600 bg-black">
                     <img src="images/Rectangle 144.png" alt="Lionel Messi">
                     <div class="p-3 pt-2 text-center">
-                        <h2 class="text-xl font-semibold mb-3">Lionel Messi</h2>
+                        <h2 id="name-Lionel-Messi" class="text-xl font-semibold mb-3">Lionel Messi</h2>
                         <p class="text-xs manrope mb-2">700 Goals | 120 Assist</p>
-                        <button class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
+                        <button id="btn-Lionel-Messi" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
                 <!-- player-2 -->
-                <div class="player border border-gray-600 bg-black">
+                <div class="border border-gray-600 bg-black">
                     <img src="images/Rectangle 144 (1).png" alt="Neymar Jr">
                     <div class="p-3 pt-2 text-center">
-                        <h2 class="text-xl font-semibold mb-3">Neymar Jr</h2>
+                        <h2 id="name-neymar-jr" class="text-xl font-semibold mb-3">Neymar Jr</h2>
                         <p class="text-xs manrope mb-2">700 Goals | 120 Assist</p>
-                        <button class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
+                        <button id="btn-neymar-jr" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
                 <!-- player-3 -->
-                <div class="player border border-gray-600 bg-black">
+                <div class="border border-gray-600 bg-black">
                     <img src="images/Rectangle 144 (2).png" alt="Kylian Mbappé">
                     <div class="p-3 pt-2 text-center">
-                        <h2 class="text-xl font-semibold mb-3">Kylian Mbappé</h2>
+                        <h2 id="name-kylian-mbappe" class="text-xl font-semibold mb-3">Kylian Mbappé</h2>
                         <p class="text-xs manrope mb-2">700 Goals | 120 Assist</p>
-                        <button class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
+                        <button id="btn-kylian-mbappe" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
                 <!-- player-4 -->
-                <div class="player border border-gray-600 bg-black">
+                <div class="border border-gray-600 bg-black">
                     <img src="images/Rectangle 144 (3).png" alt="Vítor Machado">
                     <div class="p-3 pt-2 text-center">
-                        <h2 class="text-xl font-semibold mb-3">Vítor Machado</h2>
+                        <h2 id="name-vitor-machado" class="text-xl font-semibold mb-3">Vítor Machado</h2>
                         <p class="text-xs manrope mb-2">700 Goals | 120 Assist</p>
-                        <button class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
+                        <button id="btn-vitor-machado" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
                 <!-- player-5 -->
-                <div class="player border border-gray-600 bg-black">
+                <div class="border border-gray-600 bg-black">
                     <img src="images/Rectangle 144 (4).png" alt="Sergio Ramos">
                     <div class="p-3 pt-2 text-center">
-                        <h2 class="text-xl font-semibold mb-3">Sergio Ramos</h2>
+                        <h2 id="name-sergio-ramos" class="text-xl font-semibold mb-3">Sergio Ramos</h2>
                         <p class="text-xs manrope mb-2">700 Goals | 120 Assist</p>
-                        <button class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
+                        <button id="btn-sergio-ramos" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
                 <!-- player-6 -->
-                <div class="player border border-gray-600 bg-black">
+                <div class="border border-gray-600 bg-black">
                     <img src="images/Rectangle 144 (5).png" alt="Renato Sanches">
                     <div class="p-3 pt-2 text-center">
-                        <h2 class="text-xl font-semibold mb-3">Renato Sanches</h2>
+                        <h2 id="name-renato-sanches" class="text-xl font-semibold mb-3">Renato Sanches</h2>
                         <p class="text-xs manrope mb-2">700 Goals | 120 Assist</p>
-                        <button class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
+                        <button id="btn-renato-sanches" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
                 
@@ -110,6 +110,19 @@
         </section>
         <!-- players section END -->
 
+        <!-- player section  -->
+        <section>
+            <div class="bg-black">
+                <h2 class="text-3xl itim text-center mb-5 pt-5">Selected-V</h2>
+
+                <div class="p-4 pt-0">
+                    <ol id="orderate-list" class="list-decimal list-inside">
+                    
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- player section End -->
 
 
         
@@ -118,6 +131,8 @@
     </main>
     <!-- main section end -->
 
+    <script src="js/common.js"></script>
+    <script src="js/select.js"></script>
 </body>
 
 </html>
