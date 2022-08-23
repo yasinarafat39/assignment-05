@@ -47,6 +47,6 @@ input[type=text]:focus{
 
 hr{
     height: 1px;
-    background-color: #ccc;
+    background-color: rgb(87, 81, 81);
     border: none;
 }   

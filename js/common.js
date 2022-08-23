@@ -52,7 +52,7 @@ function checkInputFieldById(inputFieldId) {
     document.getElementById(inputFieldId).addEventListener('keyup', function () {
         const inputFieldElement = document.getElementById(inputFieldId);
         const inputFieldValue = document.getElementById(inputFieldId).value;
-        if (isNaN(inputFieldValue) && inputFieldValue === '') {
+        if (isNaN(inputFieldValue) === true) {
             console.log(inputFieldValue);
             alert('please enter a valid number.');
             inputFieldElement.value = '';
