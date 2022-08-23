@@ -1,5 +1,5 @@
 
-function setListItem(elementId){
+function setListItemById(elementId) {
     const nameElement = document.getElementById(elementId);
     const name = nameElement.innerText;
 
@@ -9,31 +9,21 @@ function setListItem(elementId){
     li.innerText = name;
     li.classList.add('itim', 'player');
     ol.appendChild(li);
-    
+
 }
 
 
-function setDisabledAttribute(elementId){
+function setDisabledAttribute(elementId) {
     const button = document.getElementById(elementId);
     button.setAttribute('disabled', true);
     button.style.backgroundColor = '#A2A9AF';
 }
 
 
-function chackPlayerLength(playerCalss){
-    const players = document.getElementsByClassName(playerCalss);
-
-    if(players.length > 4){
-        alert("You can't select more than five players. Thank You !");
-        return;
-    }
-    
-}
-
 
 // Calculate section 
 
-function getInputFieldAmount(elementId){
+function getInputFieldAmountById(elementId) {
     const inputFieldElement = document.getElementById(elementId);
     const inputFieldAmountString = inputFieldElement.value;
     const inputFieldAmount = parseFloat(inputFieldAmountString);
@@ -42,9 +32,31 @@ function getInputFieldAmount(elementId){
 }
 
 
-function getTextFieldAmount(elementId){
+function getTextAmountById(elementId) {
     const textFieldElement = document.getElementById(elementId);
     const textFieldAmountString = textFieldElement.innerText;
     const textFieldAmount = parseFloat(textFieldAmountString);
     return textFieldAmount;
+}
+
+
+function setTextFieldAmountById(elementId, newValue) {
+    const element = document.getElementById(elementId);
+    element.innerText = newValue;
+}
+
+
+// Check input Field 
+function checkInputFieldById(inputFieldId) {
+
+    document.getElementById(inputFieldId).addEventListener('keyup', function () {
+        const inputFieldElement = document.getElementById(inputFieldId);
+        const inputFieldValue = document.getElementById(inputFieldId).value;
+        if (isNaN(inputFieldValue) && inputFieldValue === '') {
+            console.log(inputFieldValue);
+            alert('please enter a valid number.');
+            inputFieldElement.value = '';
+        }
+         
+    })
 }

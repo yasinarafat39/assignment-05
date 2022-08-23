@@ -1,39 +1,46 @@
 
-document.getElementById('btn-calculate').addEventListener('click', function(){
-    const perPlayerExpence = getInputFieldAmount('per-player-expense-field');
-    console.log(perPlayerExpence);
+document.getElementById('btn-calculate').addEventListener('click', function () {
+
+    const perPlayerExpence = getInputFieldAmountById('per-player-expense-field');
 
     const players = document.getElementsByClassName('player');
     const playerQuantity = players.length;
 
-    console.log('playerQuantity', playerQuantity);
-     
-    const TotalPlayerExpenses = perPlayerExpence * playerQuantity;
-    console.log('total Player expenses', TotalPlayerExpenses);
+    if (playerQuantity < 5) {
+        alert('Please select your best five players.');
+    } else {
+        const totalPlayerExpenses = perPlayerExpence * playerQuantity;
+        setTextFieldAmountById('player-expenses', totalPlayerExpenses);
+    }
 
-    const previousPlayerExpenses = getTextFieldAmount('player-expenses');
-    console.log(previousPlayerExpenses);
+});
 
-    previousPlayerExpenses.innerText = TotalPlayerExpenses;
+
+document.getElementById('btn-calculate-total').addEventListener('click', function () {
+    const totalPlayerExpence = getTextAmountById('player-expenses');
+
+    if (totalPlayerExpence <= 0) {
+        alert('Please Calculate per player expenses and than Calculate Total. Thank you !');
+        document.getElementById('manager-amount').value = '';
+        document.getElementById('coachAmount').value = '';
+    }
+    else {
+        const managerAmount = getInputFieldAmountById('manager-amount');
+
+
+        const coachAmount = getInputFieldAmountById('coachAmount');
+
+
+        const total = totalPlayerExpence + managerAmount + coachAmount;
+
+
+        setTextFieldAmountById('total-Amout', total);
+    }
+
 });
 
 
-document.getElementById('btn-calculate-total').addEventListener('click', function(){
-    const totalPlayerExpence = getTextFieldAmount('player-expenses');
-    console.log(totalPlayerExpence);
-
-    const managerAmount = getInputFieldAmount('manager-amount');
-    console.log(managerAmount);
-
-    const coachAmount = getInputFieldAmount('coachAmount');
-    console.log(coachAmount);
-
-    const total = totalPlayerExpence + managerAmount + coachAmount;
-    console.log(total);
-
-    const previousTotalAmount = getTextFieldAmount('totalAmout');
-    console.log(previousTotalAmount);
-
-    previousTotalAmount.innerText = total;
-
-});
+// Check input Field 
+checkInputFieldById('per-player-expense-field');
+checkInputFieldById('manager-amount');
+checkInputFieldById('coachAmount');
