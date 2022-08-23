@@ -43,3 +43,10 @@ input[type=text]{
 input[type=text]:focus{
     border: 3px solid rgba(204, 204, 204, 0.959);
 }
+
+
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}   
