@@ -12,22 +12,20 @@ function setListItem(elementId){
     
 }
 
-function setDisabledButton(elementId){
+function chackPlayerLength(playerCalss){
+    const players = document.getElementsByClassName(playerCalss);
+
+    if(players.length > 4){
+        alert("You can't select more than five players. Thank You !");
+        return;
+    }
+    
+}
+
+function setDisabledAttribute(elementId){
     const button = document.getElementById(elementId);
     button.setAttribute('disabled', true);
     button.style.backgroundColor = '#A2A9AF';
 }
 
 
-function chackPlayerLength(playerCalss){
-    const players = document.getElementsByClassName(playerCalss);
-    console.log(players.length);
-    if(players.length > 4){
-        
-       
-    }
-    else{
-        alert("You can't select more than five players. Thank You !");
-        return;
-    }
-}

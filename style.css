@@ -9,9 +9,13 @@
     background-image: url(images/Rectangle\ 57.png);
 }
 
-/* button color */
+/* background color */
 .btn-color{
     background-color: #015196;
+}
+
+.bg-calculate-section{
+    background-color: #0D0D0D;
 }
 
 /* font family */
@@ -25,4 +29,17 @@
 
 .itim{
     font-family: 'Itim', cursive;
+}
+
+
+/* input section */
+input[type=text]{
+    border: 3px solid rgba(204, 204, 204, 0.281);
+    outline: none;
+    transition: 0.5s;
+    width: 75%;
+    padding-left: 10px;
+}
+input[type=text]:focus{
+    border: 3px solid rgba(204, 204, 204, 0.959);
 }

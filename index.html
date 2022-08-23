@@ -103,29 +103,57 @@
                         <button id="btn-renato-sanches" class="btn-color hover:bg-sky-700 py-1 w-full">SELECT</button>
                     </div>
                 </div>
-                
-                
+
+
             </div>
 
         </section>
         <!-- players section END -->
 
-        <!-- player section  -->
-        <section>
-            <div class="bg-black">
+        <!-- player and Calculate section  -->
+        <section class="grid gap-4">
+            <!-- Player section -->
+            <div class="bg-calculate-section">
                 <h2 class="text-3xl itim text-center mb-5 pt-5">Selected-V</h2>
 
                 <div class="p-4 pt-0">
+
                     <ol id="orderate-list" class="list-decimal list-inside">
-                    
+
                     </ol>
+
                 </div>
             </div>
+            <!-- player section End -->
+
+
+            <!-- Calculate section start -->
+            <div class="p-4 bg-calculate-section">
+                <h2 class="text-3xl itim text-center mt-2 mb-4">Budget</h2>
+                <p class="">Per Player</p>
+                <input class="p-1 bg-calculate-section" type="text"></div>
+                <button id="btn-calculate" class="btn-color hover:bg-sky-700 py-1 w-full mb-4">Calculate</button>
+                <p>Player Expenses &nbsp; $<span>00</span></p>
+                <p>Manager <input class="p-1 bg-calculate-section" type="text"></div></p>
+                <p>Coach <input class="p-1 bg-calculate-section" type="text"></div></p>
+                <button id="btn-calculate" class="btn-color hover:bg-sky-700 py-1 w-full mb-4">Calculate Total</button>
+                
+                <div class="flex justify-around">
+                    <div>
+                        Total
+                    </div>
+                    <div>
+                        <span>$<span>00</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Calculate section END -->
+
+
         </section>
-        <!-- player section End -->
+        <!-- player and Calculate section End -->
 
 
-        
 
 
     </main>
@@ -133,6 +161,7 @@
 
     <script src="js/common.js"></script>
     <script src="js/select.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
