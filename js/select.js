@@ -60,5 +60,4 @@ document.getElementById('btn-renato-sanches').addEventListener('click', function
 });
 
 
-const listContainer = document.getElementById('orderate-list');
-console.log(listContainer.length);
+

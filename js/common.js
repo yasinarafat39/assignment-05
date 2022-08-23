@@ -12,6 +12,14 @@ function setListItem(elementId){
     
 }
 
+
+function setDisabledAttribute(elementId){
+    const button = document.getElementById(elementId);
+    button.setAttribute('disabled', true);
+    button.style.backgroundColor = '#A2A9AF';
+}
+
+
 function chackPlayerLength(playerCalss){
     const players = document.getElementsByClassName(playerCalss);
 
@@ -22,10 +30,21 @@ function chackPlayerLength(playerCalss){
     
 }
 
-function setDisabledAttribute(elementId){
-    const button = document.getElementById(elementId);
-    button.setAttribute('disabled', true);
-    button.style.backgroundColor = '#A2A9AF';
+
+// Calculate section 
+
+function getInputFieldAmount(elementId){
+    const inputFieldElement = document.getElementById(elementId);
+    const inputFieldAmountString = inputFieldElement.value;
+    const inputFieldAmount = parseFloat(inputFieldAmountString);
+    inputFieldElement.value = '';
+    return inputFieldAmount;
 }
 
 
+function getTextFieldAmount(elementId){
+    const textFieldElement = document.getElementById(elementId);
+    const textFieldAmountString = textFieldElement.innerText;
+    const textFieldAmount = parseFloat(textFieldAmountString);
+    return textFieldAmount;
+}

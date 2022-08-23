@@ -131,19 +131,19 @@
             <div class="p-4 bg-calculate-section">
                 <h2 class="text-3xl itim text-center mt-2 mb-4">Budget</h2>
                 <p class="">Per Player</p>
-                <input class="p-1 bg-calculate-section" type="text"></div>
+                <input id="per-player-expense-field" class="p-1 bg-calculate-section" type="text"></div>
                 <button id="btn-calculate" class="btn-color hover:bg-sky-700 py-1 w-full mb-4">Calculate</button>
-                <p>Player Expenses &nbsp; $<span>00</span></p>
-                <p>Manager <input class="p-1 bg-calculate-section" type="text"></div></p>
-                <p>Coach <input class="p-1 bg-calculate-section" type="text"></div></p>
-                <button id="btn-calculate" class="btn-color hover:bg-sky-700 py-1 w-full mb-4">Calculate Total</button>
+                <h4>Player Expenses &nbsp; $<span id="player-expenses">00</span></h4>
+                <h4>Manager <input id="manager-amount" class="p-1 bg-calculate-section" type="text"></div></h4>
+                <h4>Coach <input id="coachAmount" class="p-1 bg-calculate-section" type="text"></div></h4>
+                <button id="btn-calculate-total" class="btn-color hover:bg-sky-700 py-1 w-full mb-2">Calculate Total</button>
                 
-                <div class="flex justify-around">
+                <div class="flex justify-around font-semibold">
                     <div>
                         Total
                     </div>
                     <div>
-                        <span>$<span>00</span></span>
+                        <h3 class="text-orange-600">$<span id="totalAmout">00</span></h3>
                     </div>
                 </div>
             </div>
